@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --primary-black-color: #212121;
     --primary-text-color: #757575;
     --primary-white-color: #ffffff;
-
     --accent-color: #2196f3;
     --background-black: #21303a;
     --background-gray: #f5f4fa;
@@ -17,17 +20,6 @@
     --text-white-opacity: #ffffff99;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-a {
-    text-decoration: none;
-}
-
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
@@ -35,6 +27,11 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
+
+a {
+    text-decoration: none;
+}
+
 
 .menu {
     list-style: none;
@@ -51,7 +48,8 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color: var(--accent-color)
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 .logo-black {
@@ -73,7 +71,7 @@ body {
 }
 
 .contac-menu .link {
-    color: var(--primary-text-color);
+    color: var(--primary-black-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
@@ -110,12 +108,21 @@ header nav .nav-menu {
     gap: 80px;
 }
 
+
 .contac-menu {
     list-style: none;
     display: flex;
     gap: 80px;
 }
 
+.contac-menu .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
 /* ----------- Button section ----------- */
 
 .hero {
@@ -181,6 +188,10 @@ header nav .nav-menu {
 
 /* ----------- Dedication section ----------- */
 
+.section {
+    padding: 94px;
+}
+
 .dedication>h2 {
     font-family: 'Roboto';
     font-style: normal;
@@ -189,7 +200,7 @@ header nav .nav-menu {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--logo-black)
+    color: var(--primary-black-color)
 }
 
 .dedication ul {
@@ -205,7 +216,11 @@ header nav .nav-menu {
     width: 360px;
 }
 
-.team>h2 {
+.team ul li h3 {
+    color: var(--primary-black-color);
+}
+
+.team h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -213,27 +228,63 @@ header nav .nav-menu {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--logo-black)
+    color: var(--primary-black-color);
 }
 
 /* ----------- Portfolio section ----------- */
+.portfolio .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    list-style: none;
 
-.portfolio .list li button {
-    color: var(--primary-black-color);
-    background-color: var(--text-white-opacity);
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    text-transform: capitalize;
 }
 
-.portfolio .list li button:hover,
-.portfolio .list li button.current {
+.portfolio .menu li button {
+    border: none;
+    outline: none;
+    color: var(--primary-black-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    padding: 10px 30px;
+
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 4px;
+}
+
+.portfolio .menu li button:hover,
+.portfolio .menu li button.current {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+}
+
+.portfolio .cards {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    display: flex;
+}
+
+.portfolio .cards li {
+    margin-bottom: 20px;
+    width: 360px;
+}
+
+.portfolio .cards li a h2 {
+    color: var(--primary-black-color);
+    padding: 15px;
+}
+
+.portfolio .cards li a p {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    padding: 15px;
 }
 
 
@@ -249,10 +300,26 @@ header nav .nav-menu {
 
 footer {
     background-color: var(--background-black);
+    padding: 94px var(--container-padding);
+}
+
+address ul{
+    list-style: none;
 }
 
 address .footer {
+    display: block;
     color: var(--text-white-opacity);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+address .footer_link {
+    color: var(--primary-text-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
