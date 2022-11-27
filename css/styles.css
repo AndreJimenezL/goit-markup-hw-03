@@ -18,6 +18,8 @@
     --button-primary-hover: #188ce8;
     --logo-black: #000000;
     --text-white-opacity: #ffffff99;
+
+    --container-padding: calc((100% - 1200px) / 2);
 }
 
 body {
@@ -132,14 +134,15 @@ header nav .nav-menu {
 }
 
 .hero .hero-title {
+    width: 500px;
+    margin: 20px auto;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
+    text-align: auto;
     color: var(--primary-white-color);
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .main-button {
@@ -161,28 +164,28 @@ header nav .nav-menu {
 
 /* ----------- Benefits section ----------- */
 
-.benefits-list {
+.benefits {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
     display: flex;
 }
 
-.benefits-list li {
+.benefits li {
     list-style: none;
     width: 240px;
 }
 
-.benefits-list li .title {
+.benefits li .title {
     height: 50px;
     text-transform: uppercase;
     color: var(--primary-black-color);
 }
 
 .container {
-    padding: 15px;
+    padding: 0 15px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 
 }
 
@@ -192,7 +195,7 @@ header nav .nav-menu {
     padding: 94px;
 }
 
-.dedication>h2 {
+.dedication > h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -203,7 +206,7 @@ header nav .nav-menu {
     color: var(--primary-black-color)
 }
 
-.dedication ul {
+.dedication .container ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -211,11 +214,37 @@ header nav .nav-menu {
     padding-top: 0;
 }
 
-.dedication ul li {
+.dedication .container ul li {
     list-style: none;
     width: 360px;
 }
 
+/* ----------- Team section ----------- */
+.team {
+background-color: var(--background-gray);
+}
+
+.team_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.team_cards li {
+    background-color: var(--primary-white-color);
+    text-align: center;
+    list-style: none;
+}
+
+.team_cards li h3{
+    margin: 20px 0 10px 0;
+}
+
+.team_cards li p {
+    margin-bottom: 30px;
+}
 .team ul li h3 {
     color: var(--primary-black-color);
 }
