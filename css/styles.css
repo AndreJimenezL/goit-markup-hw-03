@@ -39,10 +39,6 @@ a {
     list-style: none;
 }
 
-.no-top-pading {
-    padding-top: 0;
-}
-
 /* ----------- Header section ----------- */
 .logo {
     font-family: "Raleway", sans-serif;
@@ -62,18 +58,8 @@ a {
     color: var(--primary-white-color);
 }
 
-.nav-menu .link {
-    color: var(--primary-black-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
 .contac-menu .link {
-    color: var(--primary-black-color);
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
@@ -95,7 +81,7 @@ header {
     align-items: center;
     height: 80px;
     padding: 0 var(--container-padding);
-    background: #FFFFFF;
+    background: var(--primary-white-color);
 }
 
 header nav {
@@ -110,21 +96,31 @@ header nav .nav-menu {
     gap: 80px;
 }
 
+header nav .logo {
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
 
 .contac-menu {
     list-style: none;
     display: flex;
     gap: 80px;
 }
-
-.contac-menu .link {
-    color: var(--primary-text-color);
+header nav .nav-menu .link {
+    color: var(--primary-black-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
     text-decoration: none;
+    text-transform: capitalize;
 }
+
+
 /* ----------- Button section ----------- */
 
 .hero {
@@ -136,13 +132,9 @@ header nav .nav-menu {
 .hero .hero-title {
     width: 500px;
     margin: 20px auto;
-    font-style: normal;
-    font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    text-align: auto;
     color: var(--primary-white-color);
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .main-button {
@@ -183,35 +175,36 @@ header nav .nav-menu {
 }
 
 .container {
-    padding: 0 55px;
-    max-width: 1600px;
+    padding: 0 15px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* ----------- Dedication section ----------- */
 
 .section {
-    padding: 94px;
-    margin: auto;
+    padding: 94px 0;
 }
 
 .dedication{
-    padding: 94px;
+    padding-top: 0;
+    padding-bottom: 90px;
 }
-.images_dedication {
-padding: 0 auto;
-}
+
+
 .dedication > h2 {
+    padding: 30px 0;
     top: 94px;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 700px;
+    font-size: 32px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-black-color)
 }
+
 
 .dedication .container ul {
     display: flex;
@@ -229,8 +222,6 @@ padding: 0 auto;
 /* ----------- Team section ----------- */
 .team {
 background-color: var(--background-gray);
-margin: 96px;
-
 }
 
 .team_cards {
@@ -238,7 +229,6 @@ margin: 96px;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;
-    flex-wrap: wrap;
 }
 
 .team_cards li {
@@ -254,11 +244,14 @@ margin: 96px;
 .team_cards li p {
     margin-bottom: 30px;
 }
+
 .team ul li h3 {
     color: var(--primary-black-color);
 }
 
 .team h2 {
+    padding: 30px 0;
+    padding-top: 94px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
