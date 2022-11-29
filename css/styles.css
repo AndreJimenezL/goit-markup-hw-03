@@ -183,19 +183,26 @@ header nav .nav-menu {
 }
 
 .container {
-    padding: 0 15px;
-    max-width: 1200px;
+    padding: 0 55px;
+    max-width: 1600px;
     margin: 0 auto;
-
 }
 
 /* ----------- Dedication section ----------- */
 
 .section {
     padding: 94px;
+    margin: auto;
 }
 
+.dedication{
+    padding: 94px;
+}
+.images_dedication {
+padding: 0 auto;
+}
 .dedication > h2 {
+    top: 94px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -211,7 +218,7 @@ header nav .nav-menu {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 0;
+
 }
 
 .dedication .container ul li {
@@ -222,6 +229,8 @@ header nav .nav-menu {
 /* ----------- Team section ----------- */
 .team {
 background-color: var(--background-gray);
+margin: 96px;
+
 }
 
 .team_cards {
