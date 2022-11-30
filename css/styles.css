@@ -82,6 +82,7 @@ header {
     height: 80px;
     padding: 0 var(--container-padding);
     background: var(--primary-white-color);
+    border-bottom: 2px solid #eee;
 }
 
 header nav {
@@ -169,7 +170,6 @@ header nav .nav-menu .link {
 }
 
 .benefits li .title {
-    height: 50px;
     text-transform: uppercase;
     color: var(--primary-black-color);
 }
@@ -304,29 +304,40 @@ background-color: var(--background-gray);
 
 .portfolio .cards li {
     margin-bottom: 20px;
-    width: 360px;
+    
 }
 
 .portfolio .cards li a h2 {
     color: var(--primary-black-color);
     padding: 15px;
+    
+}
+
+.portfolio .cards li > p{
+    border-bottom: 2px solid #eee;
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+} 
+
+.portfolio .cards li > h2 {
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
 }
 
 .portfolio .cards li a p {
     color: var(--primary-text-color);
     font-size: 16px;
     padding: 15px;
+    
 }
 
 
 /* ----------- footer section ----------- */
 
 #banner-footer {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
     top: 2158px;
     background: #2F303A;
+
 }
 
 footer {
